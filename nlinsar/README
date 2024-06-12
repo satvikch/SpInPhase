@@ -1,0 +1,50 @@
+NL-InSAR
+========
+
+Revision:	        August 24, 2010
+Author:                 Charles-Alban Deledalle
+Web page:               http://perso.telecom-paristech.fr/~deledall/nlinsar.php
+
+This MATLAB software implements the InSAR estimator (NL-InSAR)
+from pair of coregistered SLC SAR images as presented in: "NL-InSAR : Non-Local
+Interferogram Estimation", C.A. Deledalle, L.Denis and F. Tupin, IEEE Trans. on
+Geoscience and Remote Sensing (to appear).
+
+This software is free and should be used only for nonprofit purposes. Any
+unauthorized use of this software for industrial or profit-oriented
+activities is expressively prohibited.
+
+The program has been written for MATLAB with the ImageProcessing Toolbox and the
+Statistics Toolbox for Linux 32-bit or 64-bit and Windows 32-bit.
+
+The following program files are present:
+
+- nlInSAR.mex*:
+  A Mex function wich performs one iteration of nlInSAR with given filtering
+  parameters, and pre-estimated images.
+
+- nlinsar.m:
+  A matlab function wich calls iteratively the nlInSAR.mex*
+  program to refine the estimation.
+
+- example_nlinsar.m:
+  An example of how to use the NL-InSAR filter. It denoises a simulated noisy
+  images obtained from the House image (house.png) which jointly follows the
+  Goodman's model of InSAR data. The set of parameters are the same as
+  those given in the corresponding paper.
+
+- insarrnd.m:
+  Generates InSAR noisy data
+
+- snr.m:
+  Computes the SNR value.
+
+- isnr.m:
+  Computes the ISNR value.
+
+- plotimage_insar.m:
+  Plot three images corresponding to the channels of (estimated) noise-free
+  InSAR data.
+
+For any comment, suggestion or question please contact Charles-Alban
+Deledalle (deledalle@telecom-paristech.fr).
