@@ -95,7 +95,7 @@
       d) ISpInPhase - 1 (MCP)                - SparSAL/thresh.m
       e) ISpInPhase - 2 (SCAD)               - SparSAL/Sthresh.m
       
-% For the output of ISpInPhase 1 & 2, uncomment the respective code in the SparSAL.m file for the corresponding regularizer.
+% For ISpInPhase 1 & 2 output, uncomment the respective code in the SparSAL.m file for the corresponding regularizer.
 
 % 4  Experiments reproducing the results in the paper.
 %
@@ -106,17 +106,6 @@
 % Authors: Satvik Chemudupati (satvikchemudupati@gmail.com) 
 %
 % 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
