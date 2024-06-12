@@ -1,12 +1,11 @@
 function [image_esti,outputD,alpha, phi_hat_unwrap] = SpInPHASE(Z, param, D)
 %        [image_esti,output,alpha, phi_hat_unwrap] = SpInPHASE(Z, param, D)
 %
-% -- Interferometric phase denoising based on sparse representation on 
-%    learned dictionaries. SpInPHASE is publised in the paper 
+% -- INon-Convex Optimization For Sparse Interferometric Phase Estimation 
 %
-% H. Hongxing, J. M. Bioucas-Dias, V. Katkovnik, and Wu Lingda, 
-% "Interferometric phase estimation via sparse coding in the complex domain", 
-% IEEE Transactions on Geoscience and Remote Sensing, (submitted) 2013.
+% Satvik Chemudupati; Praveen Kumar Pokala; Chandra Sekhar Seelamantula, 
+% "Non-Convex Optimization For Sparse Interferometric Phase Estimation", 
+% IEEE International Conference on Image Processing (ICIP), (published) 2020.
 %
 %
 %
