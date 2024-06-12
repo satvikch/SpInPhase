@@ -2,6 +2,12 @@
 % This package implements the algorithms and  experiments  published in 
 % the paper
 %
+% Satvik Chemudupati; Praveen Kumar Pokala; Chandra Sekhar Seelamantula, 
+% "Non-Convex Optimization For Sparse Interferometric Phase Estimation", 
+% IEEE International Conference on Image Processing (ICIP), (published) 2020.
+%
+%
+% The work is based on and compared with the following algorithm and paper by
 % H. Hongxing, J. M. Bioucas-Dias, V. Katkovnik, and Wu Lingda, 
 % "Interferometric phase estimation via sparse coding in the complex domain", 
 % IEEE Transactions on Geoscience and Remote Sensing, (submitted) 2013.
@@ -19,13 +25,13 @@
 %
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Simulated InSAR data, based on  real elevation model, distributed with
+% Simulated InSAR data, based on  a real elevation model, distributed with
 % the book
 %
 %  D. Ghiglia and M. Pritt, Two-Dimensional Phase  Unwrapping. Theory, 
 %  algorithms, and Software, Wiley Inter-Science, 1998.
 
-% The data can be download by the link:
+% The data can be downloaded by the link:
 % ftp://ftp.wiley.com/public/sci_tech_med/phase_unwrapping
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,7 +55,7 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PUMA
 %
-% J. Bioucas-Dias  and  G. Valad„o, "Phase unwrapping via graph cuts", 
+% J. Bioucas-Dias  and  G. Valad√£o, "Phase unwrapping via graph cuts", 
 % IEEE Transactions on Image processing, vol. 16, no. 3, pp. 698-709, 2007. 
 %
 % PUMA webpage:        http://www.lx.it.pt/~bioucas/code/PUMA.rar
@@ -61,14 +67,14 @@
 %   analysis:  principles, applications and implementations", 
 %   Optics and Lasers in Engineering, 45(2): 304-317, 2007.
 %
-% Avalable on:  http://www.mathworks.com/matlabcentral/fileexchange/24892-windowed-fourier-transform-for-fringe-pattern-analysis-with-gui
+% Available on:  http://www.mathworks.com/matlabcentral/fileexchange/24892-windowed-fourier-transform-for-fringe-pattern-analysis-with-gui
 
 
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% NOTES:
+% Process to execute:
 % 
-% 1.   To install the package, download BM3D matlab sofware from  
+% 1.   To install the package, download BM3D Matlab software from (if not working in the codebase) 
 %     
 %      http://www.cs.tut.fi/~foi/GCF-BM3D/BM3D.zip
 %
@@ -86,22 +92,19 @@
 %     a)  Orthogonal Matching Pursuit (OMP)  -   OMP_C.m
 %     b)  Online Dictionary Learning (ODL)   -   DicLearningM.m
 %     c)  SpaRSAL                            - SpaRSAL/SpaRSAL.m
+      d) ISpInPhase - 1 (MCP)                - SparSAL/thresh.m
+      e) ISpInPhase - 2 (SCAD)               - SparSAL/Sthresh.m
+      
+% For the output of ISpInPhase 1 & 2, uncomment the respective code in the SparSAL.m file for the corresponding regularizer.
 
 % 4  Experiments reproducing the results in the paper.
 %
-%    demo_Energy_draw.m                Figure 1
-%    exp_all.m                         Figure 2, Figure3, Table I
-%    exp_non_homo.m                    Figure 4
-%    exp_mri.m                         Figure 5, Figure 6
-%    exp_Gaussian_dis_InSAR.m          Figure 7, Table II
-%    exp_long_peak.m                   Figure 8, Figure 9
-%    exp_isola.m                       Figure 10, Figure 11
-%    exp_SLCdata.m                     Figure 12, Figure 13
+%    exp_all.m                         Figure 1
+%    exp_Gaussian_dis_InSAR.m          Figure 2, Table I
+%    exp_long_peak.m                   Figure 3, Figure 2
 
-% Authors: Hao Hongxing (hongxinghao87@gmail.com) 
-%         J. M. Bioucas-Dias (bioucas@lx.it.pt) 
+% Authors: Satvik Chemudupati (satvikchemudupati@gmail.com) 
 %
-% August, 3013
 % 
 
 
