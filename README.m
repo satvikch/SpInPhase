@@ -70,8 +70,6 @@
 % Available on:  http://www.mathworks.com/matlabcentral/fileexchange/24892-windowed-fourier-transform-for-fringe-pattern-analysis-with-gui
 
 
-
-%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Process to execute:
 % 
 % 1.   To install the package, download BM3D Matlab software from (if not working in the codebase) 
